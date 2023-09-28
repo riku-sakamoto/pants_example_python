@@ -1,3 +1,9 @@
 {
-    "esbonio.sphinx.confDir": ""
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "dist/export/python/virtualenvs/tools/flake8/bin/flake8",
+    "python.formatting.blackPath": "dist/export/python/virtualenvs/tools/black/bin/black",
+    "isort.path": [
+        "dist/export/python/virtualenvs/tools/isort/bin/isort"
+    ],
+    "python.linting.mypyPath": "dist/export/python/virtualenvs/tools/mypy/bin/mypy"
 }

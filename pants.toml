@@ -32,8 +32,18 @@ interpreter_constraints = ["==3.9.*"]
 # https://www.pantsbuild.org/docs/python-third-party-dependencies. This also adds the
 # `generate-lockfiles` goal for Pants to generate the lockfile for you.
 enable_resolves = true
+default_resolve = "python_default"
 
-resolves = { python-default = "python-default.lock"}
+[python.resolves]
+python_default = "python_default.lock"
+project_cpu = "3rdparty/python/project_cpu.lock"
+
+
+[python-repos]
+find_links = [
+  "https://download.pytorch.org/whl/cpu/torch_stable.html",
+  "https://data.pyg.org/whl/torch-1.10.1+cpu.html"
+]
 
 
 [python-bootstrap]

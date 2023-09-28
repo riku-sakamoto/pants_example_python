@@ -1,0 +1,53 @@
+[[package]]
+name = "annotated-types"
+version = "0.5.0"
+description = "Reusable constraint types to use with typing.Annotated"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "pydantic"
+version = "2.3.0"
+description = "Data validation using Python type hints"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+annotated-types = ">=0.4.0"
+pydantic-core = "2.6.3"
+typing-extensions = ">=4.6.1"
+
+[package.extras]
+email = ["email-validator (>=2.0.0)"]
+
+[[package]]
+name = "pydantic-core"
+version = "2.6.3"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
+
+[[package]]
+name = "typing-extensions"
+version = "4.8.0"
+description = "Backported and Experimental Type Hints for Python 3.8+"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "4bbce4f16942cf2c7433027d7c08bdd1fde86e5a7101ff984d5bdfefcbe5b383"
+
+[metadata.files]
+annotated-types = []
+pydantic = []
+pydantic-core = []
+typing-extensions = []

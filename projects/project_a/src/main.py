@@ -1,26 +1,16 @@
 import argparse
 
-from fizzbuzz import FizzBuzzRunner
-
 from utils import show_format_str
+
+from fizzbuzz import FizzBuzzRunner
 
 
 def _init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--start", type=int, default=0)
+    parser.add_argument("--stop", type=int, default=20)
     parser.add_argument(
-        "--start",
-        type=int,
-        default=0
-    )
-    parser.add_argument(
-        "--stop",
-        type=int,
-        default=20
-    )
-    parser.add_argument(
-        "--show-fizzbuzz",
-        action="store_true",
-        help="If True, show fizzbuzz"
+        "--show-fizzbuzz", action="store_true", help="If True, show fizzbuzz"
     )
     return parser
 
