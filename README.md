@@ -11,6 +11,12 @@ In order to run this repository, `pants` binary is necessary. Please install bef
 
 Configuration of directories is shown below.
 
+* `libs` directory contains source code for in-house libraries.   
+  * In this example, fizzbuzz library is located.
+* `projects` directory contains source code for applications.
+  * `project_a` refers to `fizzbuzz` library, but `project_b` does not.
+
+
 ```text
 .
 ├── libs
@@ -27,11 +33,6 @@ Configuration of directories is shown below.
 │   └── project_b
 │       ├── pyproject.toml
 │       └── src/
-```
-
-Dependencies of libraries is shown below.
-
-```mermaid
 ```
 
 
